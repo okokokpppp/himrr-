@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p { 
+    line-height: normal;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+h1 , h2 , h3 { font-weight: normal;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*шапка*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #DDDDDD;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #DDDDDD;
+    background: #FFFFFF;
+    width: 1025px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #888888;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    color: #666666;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+}
+
+/*левый раздел*/
+.sidebar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 55px);
+    background-color: #F7F7F7;
+    border-right: 1px solid #DDDDDD;
+    overflow-y: auto;
+    z-index: 50;
+}
+
+.sidebar-nav {
+    padding: 15px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.sidebar-list li {
+    margin-bottom: 2px;
+}
+
+.sidebar-list a {
+    display: block;
+    padding: 5px 8px;
+    font-size: 13px;
+    color: #333333;
+    line-height: 1.3;
+}
+
+.sidebar-list a:hover {
+    background-color: #EEEEEE;
+    color: #555555;
+}
+/* Основной контент */
+.container {
+    display: flex;
+}
+
+.content {
+    margin-left: 260px;
+    margin-top: 55px;
+    padding: 30px 40px;
+    min-height: calc(100vh - 55px);
+    width: 100%;
+}
+
+/* Блоки тем */
+.blocks-container {
+    max-width: 960px;
+}
+
+.blocks-container > h3:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.block {
+    margin-bottom: 8px;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+}
+
+.block h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.block a {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.block:has(a):hover {
+    background-color: #F0F0F0;
+    border-color: #CCCCCC;
+}
+.section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #666666;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding-left: 2px;
+}
+/* Адаптация */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .content {
+        margin-left: 220px;
+        padding: 25px 30px;
+    }
+
+    .search-form {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        display: none;
+    }
+
+    .sidebar {
+        width: 260px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 12px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 15px 12px;
+    }
+
+    .block a
+    .block h3 {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+   /* === Аккордеон для подгрупп === */
+
+        .block-parent {
+            margin-bottom: 8;
+            border-bottom: none;
+            padding: 0;
+        }
+
+        .block-parent > a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 15px;
+            font-size: 15px;
+            color: #333333;
+            background-color: #FAFAFA;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 1px solid#DDDDDD;
+        }
+
+        .block-parent > a:hover {
+            background-color: #F0F0F0;
+            border-color: #CCCCCC;
+        }
+
+        .block-parent > a .arrow {
+            font-size: 11px;
+            color: #999999;
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+            margin-left: 10px;
+        }
+
+        .block-parent.open > a {
+            background-color: #EEEEEE;
+            border-color: #CCCCCC;
+        }
+
+        .block-parent.open > a .arrow {
+            transform: rotate(180deg);
+        }
+
+        .block-children {
+            display: none;
+            margin-bottom: 8px;
+        }
+
+        .block-parent.open .block-children {
+            display: block;
+        }
+
+        .block-child {
+            display: block;
+            padding: 8px 15px 8px 28px;
+            font-size: 14px;
+            color: #555555;
+            background-color: #F7F7F7;
+            border-bottom: 1px solid#DDDDDD;
+            text-decoration: none;
+        }
+
+        .block-child:hover {
+            background-color: #EEEEEE;
+            color: #333333;
+        }
