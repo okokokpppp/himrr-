@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiMRR — Подготовка к ГИА по химии</title>
+    <link rel="stylesheet" href="css1222/blok.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">HiMRR</a>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Найти">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+<div class="container">
+    <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Справочные материалы</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Периодическая таблица</a></li>
+                        <li><a href="#">Таблица растворимости</a></li>
+                        <li><a href="#">Ряд напряжений металлов</a></li>
+                        <li><a href="#">Формулы для расчётов</a></li>
+                        <li><a href="#">Номенклатура (неорганическая химия)</a></li>
+                        <li><a href="#">Номенклатура (органическая химия)</a></li>
+                        <li><a href="#">Качественные реакции</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Документы ФИПИ</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Демоверсия ОГЭ</a></li>
+                        <li><a href="#">Демоверсия ЕГЭ</a></li>
+                        <li><a href="#">Кодификатор ОГЭ</a></li>
+                        <li><a href="#">Кодификатор ЕГЭ</a></li>
+                        <li><a href="#">Спецификация ОГЭ</a></li>
+                        <li><a href="#">Спецификация ЕГЭ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+</div>
+        <main class="content">
+            <div class="blocks-container">
+
+                <h3>Классификация неорганических соединений</h3>
+
+                <p class="section-title">Сложные вещества</p>
+                <div class="block block-parent" id="parent-binarsoed">
+                    <a href="#" onclick="toggleBlock('parent-binarsoed'); return false;">
+                        Бинарные соединения
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="block-children">
+                        <a class="block-child" href="blok2.1.html">Оксиды</a>
+                        <a class="block-child" href="blok2.2.html">Галогениды</a>
+                        <a class="block-child" href="blok2.3.html">Карбиды</a>
+                        <a class="block-child" href="blok2.4.html">Нитриды</a>
+                        <a class="block-child" href="blok2.5.html">Гидриды</a>
+                        <a class="block-child" href="blok2.6.html">Летучие водородные соединения</a>
+                    </div>
+                </div>
+                <div class="block"><a href="blok2.7.html">Гидроксиды</a></div>
+                <div class="block"><a href="blok2.8.html">Кислоты</a></div>
+                <div class="block"><a href="blok2.9.html">Соли</a></div>
+
+                <p class="section-title">Простые вещества</p>
+
+                <div class="block block-parent" id="parent-nonmetals">
+                    <a href="#" onclick="toggleBlock('parent-nonmetals'); return false;">
+                        Неметаллы
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="block-children">
+                        <a class="block-child" href="blok2.10.html">Водород</a>
+                        <a class="block-child" href="blok2.11.html">Элементы IVA группы: углерод и кремний</a> 
+                        <a class="block-child" href="blok2.12.html">Элементы VА группы: халькогены: азот и фосфор</a>
+                        <a class="block-child" href="blok2.13.html">Элементы VIА группы: пниктоген: кислород, сера и селен</a> 
+                        <a class="block-child" href="blok2.14.html">Элементы VIIА группы: галогены: фтор, хлор, бром, йод и астат</a>
+                        <a class="block-child" href="blok2.15.html">Элементы VIIIА группы: инертные газы</a>
+                    </div>
+                </div>
+
+                <div class="block block-parent" id="parent-metals">
+                    <a href="#" onclick="toggleBlock('parent-metals'); return false;">
+                        Металлы
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="block-children">
+                        <a class="block-child" href="blok2.16.html">Элементы IА группы: щелочные металлы</a>
+                        <a class="block-child" href="blok2.17.html">Элементы IIА группы: щелочноземельные металлы</a>
+                        <a class="block-child" href="blok2.18.html">Элементы главной подгруппы: полуметаллы</a>
+                        <a class="block-child" href="blok2.19.html">Элементы побочной подгруппы: переходные металлы</a>
+                        <a class="block-child" href="blok2.20.html">Амфотерные металлы: берилий, цинк и алюминий</a>
+                        
+                    </div>
+                </div>
+
+                <p class="section-title">Общее</p>
+                <div class="block"><a href="blok2.21.html">Генетическая связь неорганических веществ, принадлежащих к различным классам</a></div>
+                <div class="block"><a href="blok2.22.html">Идентификация неорганических соединений</a></div>
+
+            </div>
+        </main>
+
+    <script>
+        function toggleBlock(id) {
+            document.getElementById(id).classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

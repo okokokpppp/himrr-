@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiMRR — Подготовка к ГИА по химии</title>
+    <link rel="stylesheet" href="css1222/blok1.x.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">HiMRR</a>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Найти">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Справочные материалы</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Периодическая таблица</a></li>
+                        <li><a href="#">Таблица растворимости</a></li>
+                        <li><a href="#">Ряд напряжений металлов</a></li>
+                        <li><a href="#">Формулы для расчётов</a></li>
+                        <li><a href="#">Номенклатура (неорганическая химия)</a></li>
+                        <li><a href="#">Номенклатура (органическая химия)</a></li>
+                        <li><a href="#">Качественные реакции</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Документы ФИПИ</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Демоверсия ОГЭ</a></li>
+                        <li><a href="#">Демоверсия ЕГЭ</a></li>
+                        <li><a href="#">Кодификатор ОГЭ</a></li>
+                        <li><a href="#">Кодификатор ЕГЭ</a></li>
+                        <li><a href="#">Спецификация ОГЭ</a></li>
+                        <li><a href="#">Спецификация ЕГЭ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+    </div>
+        
+        <main class="content">
+            <div class="theory-page">
+                 <h2> Кислоты</h2>
+                <!-- ======================== КЛАССИФИКАЦИЯ ======================== -->
+
+                <h3>1. Определение и классификация</h3>
+                <p>Кислоты — электролиты, диссоциирующие в водном растворе с отщеплением катионов водорода H⁺ (точнее — ионов гидроксония H₃O⁺). Общая формула: HₙA, где A — кислотный остаток, n — основность кислоты (число атомов H, способных замещаться на металл).</p>
+                <p>По составу кислоты делятся на бескислородные и кислородсодержащие. Бескислородные — бинарные соединения водорода с неметаллом: HF, HCl, HBr, HI, H₂S, HCN. Кислородсодержащие — содержат кислород в кислотном остатке: H₂SO₄, HNO₃, H₃PO₄, H₂CO₃, HClO₄, HMnO₄ и другие.</p>
+                <p>По основности (числу атомов H, способных замещаться): одноосновные — HCl, HNO₃, HF, CH₃COOH (один H⁺); двухосновные — H₂SO₄, H₂S, H₂CO₃, H₂SiO₃ (два H⁺); трёхосновные — H₃PO₄, H₃BO₃ (три H⁺).</p>
+                <p>По силе (степени диссоциации в разбавленном растворе): сильные — полностью диссоциируют в разбавленных растворах (HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄, HClO₃, HMnO₄); слабые — диссоциируют частично (HF, H₂S, H₂CO₃, H₂SiO₃, H₃PO₄, HNO₂, CH₃COOH). H₂SO₄ — сильная по первой ступени и умеренно сильная по второй (Ka₂ = 0,012).</p>
+                <p>По летучести: летучие — легко улетучиваются при нагревании (HCl, HBr, HI, HNO₃, CH₃COOH); нелетучие — не улетучиваются (H₂SO₄, H₃PO₄, H₂SiO₃). Это важно при вытеснении кислот из солей.</p>
+                <div class="theory-note">Правило вытеснения кислот из солей: более сильная кислота вытесняет более слабую из её соли. Нелетучая кислота вытесняет летучую при нагревании даже если она слабее: H₂SO₄(конц.) + NaCl → NaHSO₄ + HCl↑ (HCl сильнее H₂SO₄ по первой ступени, но улетучивается). Кроме того, нерастворимая кислота выпадает в осадок: Na₂SiO₃ + 2HCl → H₂SiO₃↓ + 2NaCl.</div>
+
+                <hr class="theory-part-divider">
+
+                <!-- ======================== ОБЩИЕ СВОЙСТВА ======================== -->
+
+                <h2>2. Общие химические свойства кислот</h2>
+
+                <h3>2.1. Реакция с металлами</h3>
+                <p>С разбавленными кислотами (не окислителями — HCl, H₂SO₄ разб., HBr, HI) реагируют металлы, стоящие левее водорода в ряду напряжений, с выделением H₂:</p>
+                <p style="text-align:center;">Zn + 2HCl → ZnCl₂ + H₂↑</p>
+                <p style="text-align:center;">Fe + H₂SO₄(разб.) → FeSO₄ + H₂↑</p>
+                <p style="text-align:center;">Mg + 2HCl → MgCl₂ + H₂↑</p>
+                <p style="text-align:center;">2Al + 6HCl → 2AlCl₃ + 3H₂↑</p>
+                <p>С кислотами-окислителями (HNO₃, конц. H₂SO₄) водород не выделяется — реакции рассмотрены в отдельных разделах.</p>
+                <div class="theory-note">Fe, Al, Cr пассивируются концентрированными HNO₃ и H₂SO₄ при обычных условиях — на поверхности образуется плотная оксидная плёнка. Именно поэтому концентрированную HNO₃ перевозят в стальных цистернах. Au и Pt не реагируют ни с одной кислотой в отдельности — только с «царской водкой» (3HCl + HNO₃).</div>
+
+                <h3>2.2. Реакция с основными и амфотерными оксидами</h3>
+                <p style="text-align:center;">CuO + H₂SO₄ → CuSO₄ + H₂O</p>
+                <p style="text-align:center;">Fe₂O₃ + 6HCl → 2FeCl₃ + 3H₂O</p>
+                <p style="text-align:center;">Al₂O₃ + 6HNO₃ → 2Al(NO₃)₃ + 3H₂O</p>
+                <p style="text-align:center;">ZnO + H₂SO₄ → ZnSO₄ + H₂O</p>
+                <p style="text-align:center;">MgO + 2HCl → MgCl₂ + H₂O</p>
+
+                <h3>2.3. Реакция с основаниями (нейтрализация)</h3>
+                <p style="text-align:center;">NaOH + HCl → NaCl + H₂O</p>
+                <p style="text-align:center;">Ca(OH)₂ + 2HNO₃ → Ca(NO₃)₂ + 2H₂O</p>
+                <p style="text-align:center;">Cu(OH)₂ + H₂SO₄ → CuSO₄ + 2H₂O</p>
+                <p style="text-align:center;">Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</p>
+                <p>С многоосновными кислотами при недостатке основания образуются кислые соли:</p>
+                <p style="text-align:center;">NaOH + H₃PO₄(недост.) → NaH₂PO₄ + H₂O</p>
+                <p style="text-align:center;">2NaOH + H₃PO₄ → Na₂HPO₄ + 2H₂O</p>
+                <p style="text-align:center;">NaOH + H₂SO₄(недост.) → NaHSO₄ + H₂O</p>
+
+                <h3>2.4. Реакция с солями</h3>
+                <p>Реакция идёт если образуется осадок, газ или слабый электролит:</p>
+                <p style="text-align:center;">Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑</p>
+                <p style="text-align:center;">Na₂S + 2HCl → 2NaCl + H₂S↑</p>
+                <p style="text-align:center;">BaCl₂ + H₂SO₄ → BaSO₄↓ + 2HCl</p>
+                <p style="text-align:center;">Na₂SiO₃ + 2HCl → H₂SiO₃↓ + 2NaCl</p>
+                <p style="text-align:center;">AgNO₃ + HCl → AgCl↓ + HNO₃</p>
+                <p style="text-align:center;">CH₃COONa + HCl → CH₃COOH + NaCl (слабая кислота вытесняется сильной)</p>
+
+                <hr class="theory-part-divider">
+
+                <!-- ======================== СОЛЯНАЯ КИСЛОТА ======================== -->
+
+                <h2>3. Важнейшие кислоты</h2>
+
+                <h3>3.1. Соляная кислота HCl</h3>
+                <p><strong>Физические свойства:</strong> бесцветная жидкость с резким запахом, дымит на воздухе (HCl(г) + H₂O → туман). Максимальная концентрация водного раствора — 38% («концентрированная соляная кислота»), ρ ≈ 1,19 г/см³. Смешивается с водой в любых соотношениях. Сильная одноосновная кислота, полностью диссоциирует: HCl → H⁺ + Cl⁻. Tкип азеотропной смеси (20,2% HCl) = 108,6°C.</p>
+                <p><strong>Химические свойства:</strong></p>
+                <p>Все общие свойства сильных кислот. Специфические реакции:</p>
+                <p style="text-align:center;">MnO₂ + 4HCl(конц.) → MnCl₂ + Cl₂↑ + 2H₂O (HCl — восстановитель, окисляется до Cl₂)</p>
+                <p style="text-align:center;">2KMnO₄ + 16HCl(конц.) → 2KCl + 2MnCl₂ + 5Cl₂↑ + 8H₂O</p>
+                <p style="text-align:center;">K₂Cr₂O₇ + 14HCl(конц.) → 2KCl + 2CrCl₃ + 3Cl₂↑ + 7H₂O</p>
+                <p style="text-align:center;">3HCl + HNO₃(конц.) → «царская водка» — растворяет Au и Pt:</p>
+                <p style="text-align:center;">Au + HNO₃ + 3HCl → AuCl₃ + NO↑ + 2H₂O</p>
+                <p><strong>Получение:</strong></p>
+                <p style="text-align:center;">H₂ + Cl₂ → 2HCl (синтетический метод — основной промышленный)</p>
+                <p style="text-align:center;">NaCl + H₂SO₄(конц.) → NaHSO₄ + HCl↑ (умеренный нагрев)</p>
+                <p style="text-align:center;">2NaCl + H₂SO₄(конц.) → Na₂SO₄ + 2HCl↑ (сильный нагрев)</p>
+                <p style="text-align:center;">NaCl + H₃PO₄(конц.) → NaH₂PO₄ + HCl↑ (при нагревании)</p>
+                <p><strong>Применение:</strong> <strong>травление металлов</strong> перед нанесением покрытий; <strong>производство хлоридов</strong> (FeCl₃, ZnCl₂, AlCl₃); <strong>синтез ПВХ</strong> (через HCl + C₂H₂ → CH₂=CHCl); <strong>гидрометаллургия</strong> (выщелачивание руд); <strong>пищевая промышленность</strong> (E507 — регулятор кислотности); <strong>производство желатина</strong> и клея из костей; <strong>медицина</strong> (препараты для лечения ахлоргидрии желудка).</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.2. Серная кислота H₂SO₄</h3>
+                <p><strong>Физические свойства:</strong> бесцветная маслянистая жидкость, Tпл = 10,4°C, Tкип = 337°C (с частичным разложением), ρ = 1,84 г/см³ (конц.). Смешивается с водой в любых соотношениях с сильным выделением тепла (ΔH = −96 кДж/моль). Правило разбавления: кислоту вливают в воду, а не наоборот — иначе местный перегрев приводит к выбросу. Гигроскопична — поглощает влагу из воздуха и органических веществ («обугливает» их).</p>
+                <p>Разбавленная H₂SO₄ — типичная сильная кислота (полная диссоциация по первой ступени). Концентрированная H₂SO₄ — качественно иные свойства: сильный окислитель, пассивирует Fe, Al, Cr.</p>
+                <p><strong>Химические свойства разбавленной H₂SO₄:</strong></p>
+                <p>Все общие свойства сильных кислот. Специфические:</p>
+                <p style="text-align:center;">BaCl₂ + H₂SO₄(разб.) → BaSO₄↓ + 2HCl (качественная реакция на SO₄²⁻)</p>
+                <p style="text-align:center;">Ba²⁺ + SO₄²⁻ → BaSO₄↓ (белый осадок, нерастворимый в HNO₃)</p>
+                <p style="text-align:center;">Zn + H₂SO₄(разб.) → ZnSO₄ + H₂↑</p>
+                <p style="text-align:center;">Fe + H₂SO₄(разб.) → FeSO₄ + H₂↑ (Fe → +2)</p>
+                <p><strong>Химические свойства концентрированной H₂SO₄:</strong></p>
+                <p>Как окислитель — реагирует с большинством металлов (кроме Au, Pt, Ir) и с рядом неметаллов, выделяя SO₂ (реже S или H₂S при действии активных восстановителей):</p>
+                <p style="text-align:center;">Cu + 2H₂SO₄(конц.) → CuSO₄ + SO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">S + 2H₂SO₄(конц.) → 3SO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">C + 2H₂SO₄(конц.) → CO₂↑ + 2SO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">2P + 5H₂SO₄(конц.) → 2H₃PO₄ + 5SO₂↑</p>
+                <p style="text-align:center;">Zn + 2H₂SO₄(конц.) → ZnSO₄ + SO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">8Na + 5H₂SO₄(конц.) → 4Na₂SO₄ + H₂S↑ + 4H₂O (очень активный металл → H₂S)</p>
+                <p style="text-align:center;">Fe + H₂SO₄(конц., хол.) — пассивация (реакция не идёт)</p>
+                <p style="text-align:center;">2Fe + 6H₂SO₄(конц., гор.) → Fe₂(SO₄)₃ + 3SO₂↑ + 6H₂O (при нагревании пассивация снимается)</p>
+                <p>Как осушитель и водоотнимающее средство:</p>
+                <p style="text-align:center;">C₁₂H₂₂O₁₁ + H₂SO₄(конц.) → 12C + 11H₂O + H₂SO₄ (обугливание сахарозы)</p>
+                <p style="text-align:center;">HCOOH + H₂SO₄(конц.) → CO↑ + H₂O (дегидратация муравьиной кислоты — лаб. получение CO)</p>
+                <p>Взаимодействие с солями (вытеснение летучих кислот):</p>
+                <p style="text-align:center;">NaCl + H₂SO₄(конц.) → NaHSO₄ + HCl↑</p>
+                <p style="text-align:center;">2NaBr + 2H₂SO₄(конц.) → Na₂SO₄ + Br₂↑ + SO₂↑ + 2H₂O (окисляет Br⁻)</p>
+                <p style="text-align:center;">8NaI + 5H₂SO₄(конц.) → 4Na₂SO₄ + 4I₂↑ + H₂S↑ + 4H₂O (окисляет I⁻ до I₂, сама восстанавливается до H₂S)</p>
+                <p><strong>Получение:</strong></p>
+                <p>Контактный метод (промышленный, 3 стадии):</p>
+                <p style="text-align:center;">4FeS₂ + 11O₂ → 2Fe₂O₃ + 8SO₂ (обжиг пирита или сжигание серы)</p>
+                <p style="text-align:center;">2SO₂ + O₂ → 2SO₃ (катализатор V₂O₅, T = 450°C)</p>
+                <p style="text-align:center;">SO₃ + H₂SO₄(конц.) → H₂S₂O₇ (олеум); H₂S₂O₇ + H₂O → 2H₂SO₄</p>
+                <p>(SO₃ не поглощают водой напрямую — образуется туман из мелких капель, трудно улавливаемый.)</p>
+                <p><strong>Применение:</strong> <strong>производство удобрений</strong> (суперфосфат, аммофос — крупнейший потребитель H₂SO₄); <strong>нефтепереработка</strong> (алкилирование, сернокислотная очистка); <strong>производство красителей, взрывчатых веществ</strong> (нитрование органики); <strong>металлургия</strong> (травление стали, выщелачивание руд); <strong>аккумуляторы</strong> (электролит в свинцово-кислотных аккумуляторах); <strong>производство HCl, HF, H₃PO₄</strong> из солей; <strong>синтетические волокна и смолы</strong>.</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.3. Азотная кислота HNO₃</h3>
+                <p><strong>Физические свойства:</strong> бесцветная (чистая) или желтоватая (из-за растворённого NO₂) жидкость с резким запахом, Tкип = 83°C, ρ = 1,51 г/см³ (конц.). Смешивается с водой. Разлагается на свету и при нагревании (желтеет). «Дымящая» HNO₃ — раствор NO₂ в конц. HNO₃. Сильная одноосновная кислота.</p>
+                <p><strong>Химические свойства:</strong></p>
+                <p>HNO₃ — сильный окислитель во всех концентрациях. Водород при реакции с металлами никогда не выделяется. Продукт восстановления азота зависит от концентрации кислоты и активности металла:</p>
+                <p>Концентрированная HNO₃ (с большинством металлов) → NO₂:</p>
+                <p style="text-align:center;">Cu + 4HNO₃(конц.) → Cu(NO₃)₂ + 2NO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">Ag + 2HNO₃(конц.) → AgNO₃ + NO₂↑ + H₂O</p>
+                <p style="text-align:center;">Fe + 6HNO₃(конц., гор.) → Fe(NO₃)₃ + 3NO₂↑ + 3H₂O</p>
+                <p>Разбавленная HNO₃ (с малоактивными металлами) → NO:</p>
+                <p style="text-align:center;">3Cu + 8HNO₃(разб.) → 3Cu(NO₃)₂ + 2NO↑ + 4H₂O</p>
+                <p style="text-align:center;">3Fe + 8HNO₃(разб.) → 3Fe(NO₃)₂ + 2NO↑ + 4H₂O (Fe → +2)</p>
+                <p style="text-align:center;">Fe(NO₃)₂ + HNO₃(изб.) → Fe(NO₃)₃ + ... (избыток HNO₃ окисляет Fe²⁺ до Fe³⁺)</p>
+                <p>Очень разбавленная HNO₃ (с активными металлами) → N₂O, N₂, NH₄NO₃:</p>
+                <p style="text-align:center;">4Zn + 10HNO₃(оч.разб.) → 4Zn(NO₃)₂ + NH₄NO₃ + 3H₂O</p>
+                <p style="text-align:center;">8Al + 30HNO₃(оч.разб.) → 8Al(NO₃)₃ + 3NH₄NO₃ + 9H₂O</p>
+                <p>Реакция с неметаллами:</p>
+                <p style="text-align:center;">S + 6HNO₃(конц.) → H₂SO₄ + 6NO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">P + 5HNO₃(конц.) → H₃PO₄ + 5NO₂↑ + H₂O</p>
+                <p style="text-align:center;">C + 4HNO₃(конц.) → CO₂↑ + 4NO₂↑ + 2H₂O</p>
+                <p>Пассивация: Fe, Al, Cr пассивируются конц. HNO₃ при обычных условиях.</p>
+                <p>Термическое разложение:</p>
+                <p style="text-align:center;">4HNO₃ → 4NO₂↑ + O₂↑ + 2H₂O (при нагревании или на свету)</p>
+                <p><strong>Получение (метод Оствальда, три стадии):</strong></p>
+                <p style="text-align:center;">4NH₃ + 5O₂ → 4NO + 6H₂O (Pt–Rh катализатор, T = 850°C)</p>
+                <p style="text-align:center;">2NO + O₂ → 2NO₂</p>
+                <p style="text-align:center;">3NO₂ + H₂O → 2HNO₃ + NO↑ (NO возвращают в цикл)</p>
+                <p><strong>Применение:</strong> <strong>производство азотных удобрений</strong> (NH₄NO₃ — аммиачная селитра, крупнейший потребитель); <strong>производство взрывчатых веществ</strong> (нитроглицерин, тротил, пироксилин — нитрование органики); <strong>производство красителей</strong> и фармацевтических препаратов; <strong>металлургия</strong> — растворение металлов, аффинаж драгоценных металлов; <strong>«царская водка»</strong> (3HCl : 1HNO₃) — растворение Au и Pt.</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.4. Фосфорная кислота H₃PO₄</h3>
+                <p><strong>Физические свойства:</strong> бесцветные гигроскопичные кристаллы (Tпл = 42,4°C), в продаже — 85% водный раствор (сиропообразная жидкость), ρ = 1,685 г/см³. Хорошо растворима в воде. Трёхосновная кислота средней силы: Ka₁ = 7,5·10⁻³, Ka₂ = 6,2·10⁻⁸, Ka₃ = 4,8·10⁻¹³ (третья ступень — очень слабая). Не летуча, не окислитель.</p>
+                <p><strong>Химические свойства:</strong></p>
+                <p>Все общие свойства кислот средней силы. Образует три ряда солей — дигидрофосфаты, гидрофосфаты и фосфаты:</p>
+                <p style="text-align:center;">NaOH + H₃PO₄ → NaH₂PO₄ + H₂O (дигидрофосфат — при соотношении 1:1)</p>
+                <p style="text-align:center;">2NaOH + H₃PO₄ → Na₂HPO₄ + 2H₂O (гидрофосфат)</p>
+                <p style="text-align:center;">3NaOH + H₃PO₄ → Na₃PO₄ + 3H₂O (фосфат)</p>
+                <p style="text-align:center;">Ca(OH)₂ + 2H₃PO₄ → Ca(H₂PO₄)₂ + 2H₂O (суперфосфат)</p>
+                <p style="text-align:center;">3Ca(OH)₂ + 2H₃PO₄ → Ca₃(PO₄)₂↓ + 6H₂O</p>
+                <p>Качественная реакция на фосфат-ион:</p>
+                <p style="text-align:center;">3AgNO₃ + H₃PO₄ → Ag₃PO₄↓(жёлтый) + 3HNO₃</p>
+                <p style="text-align:center;">3Ag⁺ + PO₄³⁻ → Ag₃PO₄↓ (жёлтый осадок, растворяется в HNO₃ разб.)</p>
+                <p>Термическое дегидратирование при нагревании:</p>
+                <p style="text-align:center;">2H₃PO₄ → H₄P₂O₇ + H₂O (T ≈ 200°C — пирофосфорная кислота)</p>
+                <p style="text-align:center;">H₃PO₄ → HPO₃ + H₂O (T > 300°C — метафосфорная кислота)</p>
+                <p><strong>Получение:</strong></p>
+                <p style="text-align:center;">Ca₃(PO₄)₂ + 3H₂SO₄(конц.) → 2H₃PO₄ + 3CaSO₄↓ (экстракционный метод — основной промышленный)</p>
+                <p style="text-align:center;">P₂O₅ + 3H₂O → 2H₃PO₄ (термический метод — чистая кислота)</p>
+                <p style="text-align:center;">3P + 5HNO₃(конц.) + 2H₂O → 3H₃PO₄ + 5NO↑</p>
+                <p><strong>Применение:</strong> <strong>производство фосфорных удобрений</strong> (суперфосфат, двойной суперфосфат, аммофос — крупнейший потребитель); <strong>производство моющих средств</strong> (фосфаты — умягчители воды, строители); <strong>пищевая промышленность</strong> (E338 — регулятор кислотности в газированных напитках, придаёт кисловатый вкус «Коле»); <strong>антикоррозионные покрытия</strong> (фосфатирование стали — фосфатный грунт); <strong>стоматология</strong> (фосфатный цемент); <strong>производство огнеупоров и специальных стёкол</strong>.</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.5. Угольная кислота H₂CO₃</h3>
+                <p><strong>Физические свойства:</strong> существует только в водном растворе — в чистом виде не выделена. Раствор CO₂ в воде: CO₂ + H₂O ⇌ H₂CO₃ (равновесие сильно сдвинуто влево — лишь ≈0,3% CO₂ реально гидратировано в H₂CO₃). Слабая двухосновная кислота: Ka₁ = 4,3·10⁻⁷, Ka₂ = 4,7·10⁻¹¹. Нестойкая — разлагается при нагревании и при уменьшении давления CO₂.</p>
+                <p><strong>Химические свойства:</strong></p>
+                <p style="text-align:center;">H₂CO₃ + 2NaOH → Na₂CO₃ + 2H₂O</p>
+                <p style="text-align:center;">H₂CO₃ + NaOH(недост.) → NaHCO₃ + H₂O</p>
+                <p style="text-align:center;">H₂CO₃ → H₂O + CO₂↑ (разложение при нагревании)</p>
+                <p>Как слабая кислота — вытесняется из карбонатов сильными кислотами:</p>
+                <p style="text-align:center;">Na₂CO₃ + H₂SO₄ → Na₂SO₄ + H₂O + CO₂↑</p>
+                <p style="text-align:center;">CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</p>
+                <p>Слабее H₂SiO₃ — CO₂ вытесняет SiO₂ из силикатов при сплавлении, но H₂CO₃ не вытесняет H₂SiO₃ из растворимых силикатов — наоборот:</p>
+                <p style="text-align:center;">Na₂SiO₃ + CO₂ + H₂O → H₂SiO₃↓ + Na₂CO₃ (CO₂ вытесняет H₂SiO₃ из раствора)</p>
+                <div class="theory-note">Угольная кислота слабее кремниевой в растворе — несмотря на то что CO₂ при высоких температурах вытесняется SiO₂ из карбонатов. Это разные условия: термодинамика при высоких температурах и кинетика в растворе при н.у. — не совпадают.</div>
+                <p><strong>Применение солей H₂CO₃:</strong> <strong>Na₂CO₃</strong> (кальцинированная сода) — производство стекла, мыла, бумаги, синтетических моющих средств; <strong>NaHCO₃</strong> (пищевая сода) — разрыхлитель в выпечке, гашение ожогов кислотой, медицина; <strong>CaCO₃</strong> — наполнитель резины и пластмасс, производство стекла, цемента, мел.</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.6. Кремниевая кислота H₂SiO₃</h3>
+                <p><strong>Физические свойства:</strong> белый студенистый осадок (гель), практически нерастворима в воде (0,0001 г/100 мл). Слабая двухосновная кислота, слабее угольной в растворе. Нелетучая. При нагревании разлагается:</p>
+                <p style="text-align:center;">H₂SiO₃ → SiO₂ + H₂O (T > 500°C)</p>
+                <p><strong>Химические свойства:</strong></p>
+                <p style="text-align:center;">H₂SiO₃ + 2NaOH → Na₂SiO₃ + 2H₂O</p>
+                <p style="text-align:center;">Na₂SiO₃ + CO₂ + H₂O → H₂SiO₃↓ + Na₂CO₃ (вытеснение из силикатов)</p>
+                <p style="text-align:center;">Na₂SiO₃ + 2HCl → H₂SiO₃↓ + 2NaCl</p>
+                <p>H₂SiO₃ не реагирует с кислотами (кроме HF), так как нерастворима.</p>
+                <p><strong>Получение:</strong></p>
+                <p style="text-align:center;">Na₂SiO₃ + 2HCl → H₂SiO₃↓ + 2NaCl (осаждение из раствора жидкого стекла)</p>
+                <p style="text-align:center;">Na₂SiO₃ + CO₂ + H₂O → H₂SiO₃↓ + Na₂CO₃</p>
+                <p><strong>Применение:</strong> <strong>силикагель</strong> (SiO₂·nH₂O — осушитель, сорбент, носитель катализатора); <strong>производство силикатных красок</strong>; основа для получения <strong>SiO₂ высокой чистоты</strong>. Соль — <strong>Na₂SiO₃</strong> (жидкое стекло) — огнезащитные пропитки, канцелярский клей, пропитка бумаги и дерева.</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.7. Сернистая кислота H₂SO₃</h3>
+                <p><strong>Физические свойства:</strong> существует только в водном растворе — в свободном виде не выделена. Раствор SO₂ в воде: SO₂ + H₂O ⇌ H₂SO₃ (равновесная реакция). Слабая двухосновная кислота: Ka₁ = 1,5·10⁻²; Ka₂ = 6,3·10⁻⁸. Нестойкая — при нагревании и на воздухе разлагается.</p>
+                <p><strong>Химические свойства:</strong></p>
+                <p>Проявляет и восстановительные, и окислительные свойства — S имеет СО = +4 и может как окисляться до +6, так и восстанавливаться до 0 или −2:</p>
+                <p style="text-align:center;">H₂SO₃ + 2NaOH → Na₂SO₃ + 2H₂O</p>
+                <p style="text-align:center;">H₂SO₃ + NaOH(недост.) → NaHSO₃ + H₂O</p>
+                <p style="text-align:center;">2H₂SO₃ + O₂ → 2H₂SO₄ (медленное окисление на воздухе — причина кислотных дождей)</p>
+                <p style="text-align:center;">H₂SO₃ + Cl₂ + H₂O → H₂SO₄ + 2HCl (H₂SO₃ — восстановитель)</p>
+                <p style="text-align:center;">H₂SO₃ + 2H₂S → 3S↓ + 3H₂O (H₂SO₃ — окислитель)</p>
+                <p style="text-align:center;">5H₂SO₃ + 2KMnO₄ → K₂SO₄ + 2MnSO₄ + 3H₂SO₄ + 2H₂O (восстановитель)</p>
+                <p><strong>Применение солей H₂SO₃:</strong> <strong>Na₂SO₃, NaHSO₃</strong> — консерванты (E221, E222), антиоксиданты в пищевой промышленности; отбеливание целлюлозы и тканей; <strong>Na₂S₂O₅</strong> (пиросульфит натрия) — консервант в виноделии.</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.8. Плавиковая кислота HF</h3>
+                <p><strong>Физические свойства:</strong> бесцветная жидкость (безводный HF, Tкип = 19,5°C) или водный раствор. Слабая кислота (Ka = 6,8·10⁻⁴) — единственный из галогеноводородов, не являющийся сильной кислотой. Слабость объясняется исключительно прочной связью H–F и образованием ассоциатов (HF)ₙ за счёт водородных связей. Крайне агрессивна: вызывает глубокие плохо заживающие ожоги — F⁻ проникает в ткани и связывает ионы Ca²⁺ и Mg²⁺, разрушая биоминеральную матрицу костей.</p>
+                <p><strong>Химические свойства — специфические:</strong></p>
+                <p style="text-align:center;">SiO₂ + 4HF → SiF₄↑ + 2H₂O (единственная кислота, растворяющая стекло)</p>
+                <p style="text-align:center;">CaF₂ растворяется только в конц. H₂SO₄ — HF слишком слабая для растворения фторита</p>
+                <p style="text-align:center;">2HF + 2NaOH → Na₂F₂... нет: HF + NaOH → NaF + H₂O; HF + NaF ⇌ NaHF₂ (кислый фторид)</p>
+                <p>Образование комплексных фторидов — характерное свойство HF:</p>
+                <p style="text-align:center;">SiF₄ + 2HF → H₂[SiF₆] (гексафторкремниевая кислота)</p>
+                <p style="text-align:center;">AlF₃ + 3HF → H₃[AlF₆] → 3Na⁺ + [AlF₆]³⁻ (криолит Na₃AlF₆)</p>
+                <p><strong>Получение:</strong></p>
+                <p style="text-align:center;">CaF₂ + H₂SO₄(конц.) → CaSO₄ + 2HF↑</p>
+                <p><strong>Применение:</strong> <strong>производство фторполимеров</strong> (тефлон — политетрафторэтилен, фторкаучуки); <strong>травление стекла</strong> и кварца (матирование, нанесение узоров); <strong>травление полупроводниковых пластин</strong> (удаление SiO₂ в микроэлектронике); <strong>производство криолита Na₃AlF₆</strong> для алюминиевой промышленности; <strong>катализатор</strong> в нефтепереработке (алкилирование).</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.9. Хромовая кислота H₂CrO₄ и двухромовая кислота H₂Cr₂O₇</h3>
+                <p><strong>Физические свойства:</strong> в чистом виде — неустойчивые вещества. Существуют преимущественно в виде солей: хроматов (CrO₄²⁻, жёлтые) и дихроматов (Cr₂O₇²⁻, оранжевые). В кислой среде преобладают дихроматы, в щелочной — хроматы: CrO₄²⁻ + H⁺ ⇌ HCrO₄⁻ ⇌ Cr₂O₇²⁻ + H₂O. Сильные кислоты.</p>
+                <p><strong>Химические свойства — как окислители (Cr⁶⁺ → Cr³⁺):</strong></p>
+                <p style="text-align:center;">K₂Cr₂O₇ + 3H₂S + 4H₂SO₄ → Cr₂(SO₄)₃ + K₂SO₄ + 3S↓ + 7H₂O</p>
+                <p style="text-align:center;">K₂Cr₂O₇ + 6FeSO₄ + 7H₂SO₄ → Cr₂(SO₄)₃ + K₂SO₄ + 3Fe₂(SO₄)₃ + 7H₂O</p>
+                <p style="text-align:center;">K₂Cr₂O₇ + 14HCl(конц.) → 2KCl + 2CrCl₃ + 3Cl₂↑ + 7H₂O</p>
+                <p style="text-align:center;">2CrO₃ + 3S → Cr₂O₃ + 3SO₂ (при нагревании — сильное окисление)</p>
+                <p>Качественные реакции на хромат и дихромат:</p>
+                <p style="text-align:center;">2K₂CrO₄ + H₂SO₄ → K₂Cr₂O₇ + K₂SO₄ + H₂O (в кислой среде — оранжевый цвет)</p>
+                <p style="text-align:center;">K₂Cr₂O₇ + 2KOH → 2K₂CrO₄ + H₂O (в щелочной среде — жёлтый цвет)</p>
+                <p style="text-align:center;">BaCl₂ + K₂CrO₄ → BaCrO₄↓(жёлтый) + 2KCl (качественная реакция на CrO₄²⁻)</p>
+                <p><strong>Применение:</strong> <strong>K₂Cr₂O₇</strong> (бихромат калия) — окислитель в аналитической химии и органическом синтезе; дубление кожи (хромовое дубление); <strong>K₂CrO₄</strong> — жёлтый пигмент; <strong>CrO₃</strong> — хромирование деталей (составная часть электролита для хромовых покрытий).</p>
+
+                <hr class="theory-part-divider">
+
+                <h3>3.10. Марганцовая кислота HMnO₄</h3>
+                <p><strong>Физические свойства:</strong> существует в виде водного раствора (выделение в чистом виде невозможно — очень нестойкая). Наиболее известна в виде соли — <strong>KMnO₄</strong> (перманганат калия, «марганцовка»): тёмно-фиолетовые кристаллы, хорошо растворимые в воде (раствор малиново-фиолетового цвета). Сильная кислота. Mn в степени окисления +7 — сильнейший окислитель.</p>
+                <p><strong>Химические свойства KMnO₄ — как окислитель (зависит от среды):</strong></p>
+                <p>В кислой среде Mn⁷⁺ → Mn²⁺ (бесцветный раствор MnSO₄):</p>
+                <p style="text-align:center;">2KMnO₄ + 5H₂O₂ + 3H₂SO₄ → 2MnSO₄ + K₂SO₄ + 5O₂↑ + 8H₂O</p>
+                <p style="text-align:center;">2KMnO₄ + 5Na₂SO₃ + 3H₂SO₄ → 2MnSO₄ + K₂SO₄ + 5Na₂SO₄ + 3H₂O</p>
+                <p style="text-align:center;">2KMnO₄ + 16HCl(конц.) → 2KCl + 2MnCl₂ + 5Cl₂↑ + 8H₂O</p>
+                <p>В нейтральной среде Mn⁷⁺ → Mn⁴⁺ (бурый осадок MnO₂):</p>
+                <p style="text-align:center;">2KMnO₄ + 3MnSO₄ + 2H₂O → 5MnO₂↓ + K₂SO₄ + 2H₂SO₄</p>
+                <p style="text-align:center;">2KMnO₄ + H₂O + 5Na₂SO₃ → 2MnO₂↓ + K₂SO₄ + 5Na₂SO₄... (упрощённо)</p>
+                <p>В щелочной среде Mn⁷⁺ → Mn⁶⁺ (зелёный ManganatK₂MnO₄):</p>
+                <p style="text-align:center;">2KMnO₄ + Na₂SO₃ + 2KOH → 2K₂MnO₄ + Na₂SO₄ + H₂O</p>
+                <p>Разложение при нагревании:</p>
+                <p style="text-align:center;">2KMnO₄ → K₂MnO₄ + MnO₂ + O₂↑ (T > 200°C — лабораторный способ получения O₂)</p>
+                <p><strong>Применение:</strong> <strong>KMnO₄</strong> — антисептик и дезинфектант в медицине; окислитель в аналитической и препаративной химии (перманганатометрия); обеззараживание воды; производство красителей; <strong>Mn₂O₇</strong> — редкий лабораторный реагент.</p>
+
+                <hr class="theory-part-divider">
+
+                <!-- ======================== ПОЛУЧЕНИЕ КИСЛОТ ======================== -->
+
+                <h2>4. Общие способы получения кислот</h2>
+
+                <h3>4.1. Взаимодействие кислотного оксида с водой</h3>
+                <p style="text-align:center;">SO₃ + H₂O → H₂SO₄</p>
+                <p style="text-align:center;">SO₂ + H₂O → H₂SO₃</p>
+                <p style="text-align:center;">CO₂ + H₂O ⇌ H₂CO₃</p>
+                <p style="text-align:center;">P₂O₅ + 3H₂O → 2H₃PO₄</p>
+                <p style="text-align:center;">N₂O₅ + H₂O → 2HNO₃</p>
+                <p>(SiO₂ с водой не реагирует — H₂SiO₃ этим способом не получают.)</p>
+
+                <h3>4.2. Вытеснение более слабой или летучей кислоты из соли</h3>
+                <p style="text-align:center;">CaF₂ + H₂SO₄(конц.) → CaSO₄ + 2HF↑</p>
+                <p style="text-align:center;">Na₂CO₃ + H₂SO₄ → Na₂SO₄ + H₂O + CO₂↑</p>
+                <p style="text-align:center;">Na₂SiO₃ + 2HCl → H₂SiO₃↓ + 2NaCl</p>
+                <p style="text-align:center;">3Ca₃(PO₄)₂ + 10H₂SO₄(конц.) → 6H₃PO₄ + 10CaSO₄↓ (производство H₃PO₄)</p>
+
+                <h3>4.3. Синтез из элементов (для бескислородных)</h3>
+                <p style="text-align:center;">H₂ + Cl₂ → 2HCl</p>
+                <p style="text-align:center;">H₂ + F₂ → 2HF (самовоспламенение)</p>
+                <p style="text-align:center;">H₂ + S ⇌ H₂S (при нагревании, равновесная)</p>
+
+                <h3>4.4. Окисление неметаллов азотной кислотой</h3>
+                <p style="text-align:center;">S + 6HNO₃(конц.) → H₂SO₄ + 6NO₂↑ + 2H₂O</p>
+                <p style="text-align:center;">P + 5HNO₃(конц.) → H₃PO₄ + 5NO₂↑ + H₂O</p>
+
+            </div>
+        </main>
+
+    
+</body>
+</html>
